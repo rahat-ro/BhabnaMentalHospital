@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="PatientDemo">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:background="@drawable/abc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <ImageView
+            android:padding="8dp"
+            android:id="@+id/back"
+            android:src="@drawable/ic_backone"
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/arrowUp"
+            android:src="@drawable/s1"
+            android:layout_width="120dp"
+            android:layout_height="100dp" />
+        <ImageView
+            android:id="@+id/arrowDown"
+            android:src="@drawable/s2"
+            android:layout_width="120dp"
+            android:layout_height="100dp" />
+        <ImageView
+            android:id="@+id/arrowLeft"
+            android:src="@drawable/s3"
+            android:layout_width="100dp"
+            android:layout_height="120dp" />
+        <ImageView
+            android:id="@+id/arrowRight"
+            android:src="@drawable/s4"
+            android:layout_width="100dp"
+            android:layout_height="120dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

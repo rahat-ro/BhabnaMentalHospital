@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="4dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:elevation="4dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:padding="8dp"
+                android:id="@+id/doctor_img"
+                android:elevation="4dp"
+                android:src="@drawable/male_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="180dp" />
+
+            <View
+                android:layout_marginRight="4dp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/c1"
+        android:backgroundTint="@color/colorYellow"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/li"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Professor Dr. Sayed Azizul Haque"
+                        android:id="@+id/doctor_name"
+                        android:padding="2dp"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="Cardiology /Heart Specialist"
+                        android:id="@+id/doctor_expertise"
+                        android:padding="2dp"
+                        android:textSize="16dp"
+                        android:textStyle="italic"
+                        android:textColor="@color/colorBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@id/li"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:padding="2dp"
+                    android:textSize="16dp"
+                    android:textStyle="italic"
+                    android:text="Professor"
+                    android:textColor="@color/colorBlack"
+                    android:id="@+id/doctor_designation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+                <TextView
+                    android:padding="2dp"
+                    android:textSize="16dp"
+                    android:textStyle="italic"
+                    android:text="MBBS, FCPS, MD"
+                    android:textColor="@color/colorBlack"
+                    android:id="@+id/doctor_qualification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:textSize="16dp"
+                    android:textStyle="italic"
+                    android:textColor="@color/colorBlack"
+                    android:text=" Medinova Consultation Centre House # 54/1, Road # 4/A, Dhanmondi R/A, Dhaka.Phone: +880-2-8620353-6, 9662999"
+                    android:id="@+id/doctor_chamber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <Button
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/btn_appointment"
+        android:layout_below="@id/c1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make an Appointment"
+     />
+
+</RelativeLayout>
